@@ -1,0 +1,59 @@
+<!-- DOCTYPE HTML -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!--Tell internet explorer to use the latest rendering engine **ALWAYS INCLUDE**-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--Set page width to size of device and set zome level to 1-->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<title>Bootstrap Tutorial</title>
+
+<!--CDN = Content Delivery Network-->
+<!--Linking Bootstrap to our page, -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    .jumbotron{
+        background-color: #2e2d88;
+        color: white;
+    }
+    .tab-content{
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+    .nav-tabs{
+        margin-bottom: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-hospopup="true" aria-expanded="true">Favorite Hero
+            <span class="caret"></span> <!-- Has the drop down picture to the side -->
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">Marvel</li>
+            <li><a href="#">SpiderMan</a></li>
+            <li><a href="#">Captian America</a></li>
+            <li><a href="#">Iron Man</a></li>
+
+            <li role="seperator" class="divider"></li>
+            <li class="dropdown-header">DC</li>
+
+            <li class="disabled"><a href="#">Superman</a></li>
+            <li><a href="#">Batman</a></li>
+            <li><a href="#">Flash</a></li>
+    </div>
+</div>
+
+
+<!--Used to called jquery and java script, calling bootstrap script too-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
